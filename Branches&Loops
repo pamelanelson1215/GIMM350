@@ -1,0 +1,26 @@
+From GIMM350 Homework 1 -
+Question:
+Now that you've seen the if statement and the looping constructs in the C# language, see if you can write C# code to find the sum of all integers 1 through 20 that are divisible by 3. Here are a few hints:
+
+The % operator gives you the remainder of a division operation.
+The if statement gives you the condition to see if a number should be part of the sum.
+The for loop can help you repeat a series of steps for all the numbers 1 through 20.
+Try it yourself. Then check how you did. As a hint, you should get 63 for an answer.
+
+Answer:
+int sum = 0;
+for (int number = 1; number < 21; number++)
+{
+    if (number % 3 == 0)
+    {
+        sum = sum + number;
+    }
+}
+Console.WriteLine($"The sum is {sum}");
+
+Comments:
+//the first variable is a holder for the answer
+//for statement is used to go through numbers 1 through 20
+//if statement checks to see if numbers 1 through 20 are divisible by 3 (no remainders hence the %)
+//if "if statement" is true, equation solves for sum
+//last line writes out output
