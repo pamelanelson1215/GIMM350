@@ -26,3 +26,25 @@ public class Utilities
         }
     }
 }
+
+//inheritance from crash course section
+//has an override
+//create an object that is from the RenFairePerson class
+//tell it to "SayHello()"
+class Person
+    {
+         public string Name;
+         public virtual void SayHello()
+         {
+         Console.WriteLine("Hello");
+         }
+        }
+
+        class RenFairePerson : Person
+        {
+         public override void SayHello()
+         {
+         base.SayHello();
+         Console.Write("Huzzah!");
+         }
+    }
