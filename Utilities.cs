@@ -48,3 +48,20 @@ class Person
          Console.Write("Huzzah!");
          }
     }
+    
+//main menu operation
+class MainMenuOperation
+{
+ public const string NewScene = "NextScene"; //
+
+  public void StartGame()
+  {
+    SceneManager.LoadScene(NewScene);
+  }
+
+  public void QuitGame()
+  {
+    Application.Quit();
+    print("quit application");
+  }   
+}
